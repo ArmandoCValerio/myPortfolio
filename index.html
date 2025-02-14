@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Client Portfolio</title>
+	<script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>      
+		<div id="home" class="profile">
+			 <p class="profile_name">Armando Coelho Valério</p>
+			 <div class="contact_info">
+				<img src="envelope.png"/>
+				Armando.CoelhoValerio@nttdata.com
+			</div>
+			
+			<div class="contact_info">
+				<img src="phone.png"/>
+				+0013456764598
+			</div>
+        </div>
+		
+		<ul class="nav-links">
+			<li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-container">
+			<div class="about-text">			
+				<h1>About Me</h1>
+				<p>Hi, I’m Armando Coelho Valério, a Master of Science in Information Systems with a focus on IT architecture and system development. <br> Currently, I work as a leading technical consultant, specializing in Business Analysis, Data Analysis, Software Architecture, <br> and Software Development with a strong emphasis on AI and information systems management. <br> My passion lies in solving complex problems and building robust, scalable solutions that drive business value.</p>
+			</div>
+			<img src="profile.jpg" alt="Profile Image" class="profile-img">
+		</div>
+	</section>
+	
+   <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+		<div class="skills">
+			<div class="skill-card">
+				<img src="code.png" alt="Software Development Logo" class="skill-card-img">
+				<p>Software Development</p>
+			</div>
+			<div class="skill-card">
+				<img src="data-analysis.png" alt="Data Analysis Logo" class="skill-card-img">
+				<p>Data Analysis</p>
+			</div>
+			<div class="skill-card">
+				<img src="ai-logo.png" alt="AI Logo" class="skill-card-img">
+				<p>Artificial Intelligence</p>
+			</div>
+		</div>
+		<div class="skills">
+		<p></p>
+		</div>
+		<div class="skills">
+			<div class="skill-card">
+				<img src="html-logo.png" alt="HTML Logo" class="skill-card-img">
+				<p>HTML5</p>
+			</div>
+			<div class="skill-card">
+				<img src="css-logo.png" alt="CSS Logo" class="skill-card-img">
+				<p>CSS3</p>
+			</div>
+			<div class="skill-card">
+				<img src="js-logo.png" alt="JavaScript Logo" class="skill-card-img">
+				<p>JavaScript</p>
+			</div>
+			<div class="skill-card">
+				<img src="python-logo.png" alt="Python Logo" class="skill-card-img">
+				<p>Python</p>
+			</div>
+			<div class="skill-card">
+				<img src="java-logo.png" alt="Java Logo" class="skill-card-img">
+				<p>Java</p>
+			</div>
+			<div class="skill-card">
+				<img src="csharp-logo.png" alt="C# Logo" class="skill-card-img">
+				<p>C#</p>
+			</div>
+		</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+		<div class="projects">
+			<div class="project">
+				<h3>CODEX Middleware</h3>
+				<p>Developed CODEX, a middleware solution for seamless data exchange between PLC production systems and production planning systems, supporting adaptive AI-driven interface management.</p>
+			</div>
+			<div class="project">
+				<h3>AI_LIFE Project</h3>
+				<p>Led the AI_LIFE project focusing on intelligent data processing and self-optimizing algorithms to enhance production efficiency and operational decision-making.</p>
+			</div>
+			<div class="project">
+				<h3>Data Analytics Dashboard</h3>
+				<p>Created a comprehensive dashboard for real-time data visualization and analytics, supporting business intelligence and strategic planning.</p>
+			</div>
+		</div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>       			
+		<div id="recommendation-list">		
+			<div id="recommendation">
+				<h3></h3>				 
+				<p><span>&#8220;</span>Armando demonstrates exceptional expertise in IT architecture, system development, and data analysis. His analytical mindset and deep understanding of emerging technologies enable him to design scalable, efficient solutions that drive innovation and success.<span>&#8221;</span> - <b> Alexa</b></p>				
+            </div>
+			<div id="recommendation">
+				<h3></h3>
+				<p><span>&#8220;</span>Armando excels in IT problem-solving, combining a strong foundation in software architecture, data analysis, and AI-driven solutions. His ability to integrate complex systems and optimize workflows ensures secure, efficient, and future-proof IT solutions.<span>&#8221;</span> - <b> Sarah</b></p>
+            </div>
+			<div id="recommendation">
+				<h3></h3>
+				<p><span>&#8220;</span>As a highly skilled technical consultant, Armando stands out for his strategic thinking and innovative mindset. His expertise in IT architecture, business analysis, and software development allows him to drive intelligent, technology-driven transformation.<span>&#8221;</span> - <b> Michael</b></p>
+			</div>
+        </div>
+		
+        <!-- Add Recommendation Form -->
+        <form id="recommendation-form">
+			<legend class="introduction">Leave a Recommendation</legend>  
+            <p><input type="text" id="reco-name" placeholder="Name (Optional)"></p>			
+			<p><textarea id="new-recommendation" placeholder="Write a recommendation..." maxlength="1200" required rows="5"></textarea></p>
+			<p><button type="submit" onclick="addRecommendation()">Submit</button></p>
+		</form>
+    </section>
+  
+	<div class="iconbutton" id="iconbutton">
+      <a href="#home">
+		<svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+		<path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+		</svg>
+      </a>
+    </div>
+	
+	<div class="popup" id="popup" class="flex_center">
+      <img src="checkmark.svg"/>
+      <h3>Thank you for the recommendation!!!!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+	
+	<!-- Footer -->
+    <footer>
+		<p>&copy;2025 Armando.CoelhoValerio@nttdata.com</p>
+    </footer>
+    <script>
+        // Scroll to top when icon is clicked
+		document.getElementById("iconbutton").addEventListener("click", function() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+		
+		function showPopup(bool) {
+		  if (bool) {
+			document.getElementById('popup').style.visibility = 'visible'
+		  } else {
+			document.getElementById('popup').style.visibility = 'hidden'
+		  }
+		}        
+		
+		// Handle Recommendation Form Submission
+        document.getElementById("recommendation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const newRecommendation = document.getElementById("new-recommendation").value;
+            const newRecoName = document.getElementById("reco-name").value;
+            const recommendationList = document.getElementById("recommendation-list");
+            console.log("New recommendation added");
+			showPopup(true);
+			
+            // Add new recommendation
+            const newParagraph = document.createElement("div");			
+			//newParagraph.textContent = newRecoName ? `"${newRecommendation}" - ${newRecoName}` : `"${newRecommendation}"`;
+			newParagraph.innerHTML = newRecoName ? `\<span\>&#8220;\</span\>${newRecommendation}\<span\>&#8221;\</span\> - <strong>${newRecoName}</strong>` : `\<span\>&#8220;\</span\>${newRecommendation}\<span\>&#8221;\</span\>`; 
+            recommendationList.appendChild(newParagraph);
+            
+            // Clear input field
+            document.getElementById("new-recommendation").value = "";
+            document.getElementById("reco-name").value = "";
+            
+            //alert("Thank you for your recommendation!");
+        });
+		
+		function addRecommendation() {
+		  // Get the message of the new recommendation
+		  let recommendation = document.getElementById("new_recommendation");
+		  // If the user has left a recommendation, display a pop-up
+		  if (recommendation.value != null && recommendation.value.trim() != "") {
+			console.log("New recommendation added");
+			console.log("New recommendation added");
+			showPopup(true);
+
+			// Create a new 'recommendation' element and set it's value to the user's message
+			var element = document.createElement("div");
+			element.setAttribute("class","recommendation");
+			element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
+			// Add this element to the end of the list of recommendations
+			document.getElementById("all_recommendations").appendChild(element); 
+			
+			// Reset the value of the textarea
+			recommendation.value = "";
+		  }
+		}
+    </script>
+</body>
+</html>
